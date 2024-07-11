@@ -1,0 +1,241 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+:root {
+    --primary-color: #2e5d5d;
+    --secondary-color: #3e9b83;
+    --background-color: #ffffff;
+    --sec-background-color: #19203b;
+    --light-color: #76c8ac;
+    --text-color: #000000;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--sec-background-color);
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
+    all: unset;
+}
+
+ul li {
+    list-style: none;
+}
+ /* Button Styling */
+button {
+    border: none;
+    outline: none;
+    display: inline-block;
+
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    transition: .3s;
+    cursor: pointer;
+    padding: 1.2em 1.5em;
+    font-weight: 420;
+}
+
+button:hover{
+    background-color: var(--secondary-color);
+}
+
+/* --- Header Section --- */
+header.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 5em;
+    width: 100%;
+    border-bottom: var(--primary-color) 4px solid;
+    background:#e6fef6
+}
+
+header .logo {
+    display: flex;
+    gap: 0.3em;
+    font-weight: 700;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+header span {
+    color: var(--primary-color);
+}
+
+nav.navbar ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-top: 4px;
+    margin-left: -10%;
+    font-size: 1.05em;
+}
+
+nav.navbar ul li{    /* Links */
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+    transition: 0.3s;
+}
+
+nav.navbar ul li:hover{    /* Links activation */
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.btns {
+    display: flex;
+    gap: 0.6em;
+}
+
+.btns button{
+    border-radius: 50%;
+    padding: 0.7em;
+}
+
+/* --- Home Section --- */
+main.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    padding: 0 10%;
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+}
+
+main.home .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+main.home img {
+    border-radius: 50%;
+}
+
+.about_btn {
+    margin-left: 1em;
+    background-color: var(--background-color);
+    border: var(--primary-color) 2px solid;
+    color: var(--primary-color);
+}
+.about_btn:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+/* --- Companies Section --- */
+section.comps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    padding: 0 10%;
+    font-size: large;
+    gap: 2em;
+}
+
+.names {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10%;
+    gap: 10vw;
+}
+
+.comp {
+    display: flex;
+    gap: 0.3em;
+    align-items: center;
+}
+
+.comp i {
+    font-size: 2em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bxs-layer {
+    background: -webkit-linear-gradient(#310063, #ad5bff);
+    
+}
+
+.bxs-diamond {
+    background: -webkit-linear-gradient(#01a053, #7ff7bd);
+}
+
+.bxs-circle-three-quarter {
+    background: -webkit-linear-gradient(#006a91, #64d2fa);
+}
+
+.bxs-book-open {
+    background: -webkit-linear-gradient(#ff7e5f, #feb47b);
+}
+
+.bx-math {
+    background: -webkit-linear-gradient(#a00000, #c24646);
+}
+
+/* --- Courses Section --- */
+.courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+    gap: 2em;
+}
+
+.row > * {
+    flex: 1 100%;
+    text-align: center;
+}
+
+.categories {
+    width: 20vw;
+    border: #000000 2px solid;
+    flex: 2;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+
+.element {
+    border: #000000 2px solid;
+    flex: 1;
+    width: 10vw;
+    display: flex;
+    
+}
